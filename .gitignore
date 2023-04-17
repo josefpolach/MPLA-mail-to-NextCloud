@@ -2,6 +2,9 @@
 #whole idea folder
 .idea
 
+#passwords file
+passwords
+
 ### macOS template
 # General
 .DS_Store
