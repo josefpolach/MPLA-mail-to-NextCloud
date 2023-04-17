@@ -7,6 +7,10 @@ from bs4 import BeautifulSoup
 import requests
 from owncloud import Client, HTTPResponseError
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Set your email and Nextcloud credentials
 EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS")
