@@ -50,7 +50,7 @@ def main():
 
     # Search for emails from the specified recipient
     imap.select_folder("INBOX", readonly=True)
-    messages = imap.search(["TO", "pottery.fatales_0o@icloud.com"])
+    messages = imap.search(["FROM", "mpla@mpla.io"])
 
 
 
@@ -71,7 +71,7 @@ def main():
                         pdf_response = requests.get(pdf_link)
                         if pdf_response.status_code == 200:
                             # file_name = pdf_link.split("/")[-1]
-                            file_name = datetime.today().strftime("%Y-%m-%d_%H:%M:%S")+".pdf"
+                            file_name = datetime.today().strftime("%Y-%m-%d_%H%M%S")+".pdf"
                             current_year = datetime.now().strftime("%Y")
                             current_month = datetime.now().strftime("%m")
 
